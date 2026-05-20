@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LireMonde</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">LireMonde</div>
+    <ul class="nav-links">
+      <li><a href="#"></a>Accueil</li>
+      <li><a href="#"></a>À Lire</li>
+      <li><a href="#"></a>Admin</li>
+    </ul>
+ <input type="text"  class="search-input" placeholder="Rechercher un livre... ">
+</header>
+  <!-- HERO SECTION -->
+ <section id="Accueil" class="hero">
+        <img src="image/plr.jpg" alt="LireMonde">
+        <div class="hero-content">
+            <h1>Découvrez vos prochains livres préférés</h1>
+            <p>Explorez notre bibliothèque interactive.</p>
+        </div>
+</section>
+       <!-- FILTER BUTTONS -->
+<div id="filters-wrapper">
+    <section class="filters-container">
+        <button onclick="filterBooks('Tous')">Tous</button>
+        <button onclick="filterBooks('Classique')">Classique</button>
+        <button onclick="filterBooks('Drame')">Drame</button>
+        <button onclick="filterBooks('Fantaisie')">Fantaisie</button>
+        <button onclick="filterBooks('Comédie')">Comédie</button>
+    </section>
+</div>
+    <footer>
+    <p>© 2026 LireMonde - Plateforme de lecture numérique</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+{
+  "livres": [
+    {
+      "id": 1,
+      "titre": "Les Misérables",
+      "auteur": "Victor Hugo",
+      "genre": "Classique",
+      "description": "Roman classique racontant la vie de Jean Valjean, un ancien prisonnier qui cherche à changer de vie dans une société pleine d’injustices.",
+      "couverture": "images/les-miserables.jpg",
+      "aLire": true
+    },
+    {
+      "id": 2,
+      "titre": "Madame Bovary",
+      "auteur": "Gustave Flaubert",
+      "genre": "Drame",
+      "description": "L’histoire d’Emma Bovary, une femme qui rêve d’une vie plus luxueuse et romantique que son quotidien.",
+      "couverture": "images/madame-bovary.jpg",
+      "aLire": false
+    },
+    {
+      "id": 3,
+      "titre": "Le Rouge et le Noir",
+      "auteur": "Stendhal",
+      "genre": "Classique",
+      "description": "Roman qui suit Julien Sorel, un jeune homme ambitieux voulant réussir dans la société française du XIXe siècle.",
+      "couverture": "images/le-rouge-et-le-noir.jpg",
+      "aLire": true
+    },
+    {
+      "id": 4,
+      "titre": "Roméo et Juliette",
+      "auteur": "William Shakespeare",
+      "genre": "Drame",
+      "description": "Une célèbre tragédie racontant l’amour impossible entre Roméo et Juliette, deux jeunes issus de familles ennemies.",
+      "couverture": "images/romeo-et-juliette.jpg",
+      "aLire": false
+    },
+    {
+      "id": 5,
+      "titre": "La Dame aux Camélias",
+      "auteur": "Alexandre Dumas fils",
+      "genre": "Romance",
+      "description": "Roman romantique et dramatique racontant l’histoire d’amour entre Marguerite Gautier et Armand Duval.",
+      "couverture": "images/la-dame-aux-camelias.jpg",
+      "aLire": true
+    },
+    {
+      "id": 6,
+      "titre": "Antigone",
+      "auteur": "Jean Anouilh",
+      "genre": "Théâtre",
+      "description": "Pièce de théâtre inspirée de la mythologie grecque où Antigone lutte pour défendre ses convictions.",
+      "couverture": "images/antigone.jpg",
+      "aLire": false
+    },
+    {
+      "id": 7,
+      "titre": "Le Malade imaginaire",
+      "auteur": "Molière",
+      "genre": "Comédie",
+      "description": "Comédie de Molière mettant en scène un homme hypocondriaque obsédé par les médecins et sa santé.",
+      "couverture": "images/le-malade-imaginaire.jpg",
+      "aLire": true
+    },
+    {
+      "id": 8,
+      "titre": "Le Bourgeois gentilhomme",
+      "auteur": "Molière",
+      "genre": "Comédie",
+      "description": "Pièce comique racontant les aventures de Monsieur Jourdain qui rêve de devenir un noble.",
+      "couverture": "images/le-bourgeois-gentilhomme.jpg",
+      "aLire": false
+    },
+    {
+      "id": 9,
+      "titre": "L'Avare",
+      "auteur": "Molière",
+      "genre": "Comédie",
+      "description": "Comédie célèbre de Molière centrée sur Harpagon, un homme très avare qui aime plus son argent que sa famille.",
+      "couverture": "images/l-avare.jpg",
+      "aLire": true
+    }
+  ]
+}
