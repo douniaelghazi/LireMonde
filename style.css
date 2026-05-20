@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'cimzel'sans-serif;
 }
 
 body {
@@ -14,8 +14,9 @@ body {
     align-items: center;
     background-color: #87826A; 
     padding: 15px 40px;
-    position: relative;
     z-index: 10;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -47,3 +48,54 @@ body {
     font-size: 16px;
     outline: none;
 } 
+section img{
+    width:100%;
+    height: 550px;
+    object-fit: cover;
+}
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #87826a5b;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 400px;
+    z-index: 2;
+}
+.hero-content h1{
+    font-size:large;
+    margin-bottom: 15px;
+}
+.hero-content p{
+    font-size: 14px;
+}
+#filters-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -30px; 
+    z-index: 10;
+}
+.filters-container{
+    display: flex;
+    gap: 10px;
+    background:#87826a5b;
+    padding: 10px;
+    border-radius: 15px;
+}
+/* buttons */
+.filters-container button {
+    background: #87826A; 
+    border: none;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
