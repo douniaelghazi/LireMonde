@@ -96,6 +96,15 @@ section img{
     cursor: pointer;
     transition: 0.3s;
 }
+footer {
+    background: #87826A; 
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: black;
+    box-sizing: border-box;
+}
 
 
 

@@ -24,6 +24,7 @@
             <p>Explorez notre bibliothèque interactive.</p>
         </div>
 </section>
+<main>
        <!-- FILTER BUTTONS -->
 <div id="filters-wrapper">
     <section class="filters-container">
@@ -34,6 +35,34 @@
         <button onclick="filterBooks('Comédie')">Comédie</button>
     </section>
 </div>
+ <!-- BOOKS SECTION -->
+    <section id="livres" class="books-container">
+        <h2 class="section-title">Livres populaires</h2>
+    </section>
+
+    <div class="book-grid" id="book-container"></div>
+
+    <!-- FAVORITES -->
+    <section id="Favoris" class="favorites">
+        <h2 class="section-title">Ma Liste À Lire ❤️</h2>
+
+        <div class="book-grid" id="book-grid-fav"></div>
+    </section>
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h2 id="modal-titre"></h2>
+            <p id="modal-genre"></p>
+            <p id="modal-description"></p>
+            <button class="btn" id="add-fav"> Ajouter à la liste ❤️ </button>
+        </div>
+    </div>
+
+</main>
+<!-- FOOTER -->
     <footer>
     <p>© 2026 LireMonde - Plateforme de lecture numérique</p>
 </footer>

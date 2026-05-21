@@ -6,7 +6,7 @@
       "auteur": "Victor Hugo",
       "genre": "Classique",
       "description": "Roman classique racontant la vie de Jean Valjean, un ancien prisonnier qui cherche à changer de vie dans une société pleine d’injustices.",
-      "couverture": "images/les-miserables.jpg",
+      "couverture": "images/Les Misérables.jpg",
       "aLire": true
     },
     {
@@ -15,7 +15,7 @@
       "auteur": "Gustave Flaubert",
       "genre": "Drame",
       "description": "L’histoire d’Emma Bovary, une femme qui rêve d’une vie plus luxueuse et romantique que son quotidien.",
-      "couverture": "images/madame-bovary.jpg",
+      "couverture": "images/Madame Bovary.jpg",
       "aLire": false
     },
     {
@@ -24,7 +24,7 @@
       "auteur": "Stendhal",
       "genre": "Classique",
       "description": "Roman qui suit Julien Sorel, un jeune homme ambitieux voulant réussir dans la société française du XIXe siècle.",
-      "couverture": "images/le-rouge-et-le-noir.jpg",
+      "couverture": "images/Le Rouge et le Noir.jpg",
       "aLire": true
     },
     {
@@ -33,25 +33,25 @@
       "auteur": "William Shakespeare",
       "genre": "Drame",
       "description": "Une célèbre tragédie racontant l’amour impossible entre Roméo et Juliette, deux jeunes issus de familles ennemies.",
-      "couverture": "images/romeo-et-juliette.jpg",
+      "couverture": "images/Roméo et juliette.webp",
       "aLire": false
     },
     {
-      "id": 5,
-      "titre": "La Dame aux Camélias",
-      "auteur": "Alexandre Dumas fils",
-      "genre": "Romance",
-      "description": "Roman romantique et dramatique racontant l’histoire d’amour entre Marguerite Gautier et Armand Duval.",
-      "couverture": "images/la-dame-aux-camelias.jpg",
-      "aLire": true
-    },
+  "id": 5,
+  "titre": "La Passe-Miroir",
+  "auteur": "Christelle Dabos",
+  "genre": "Fantasy",
+  "description": "Ophélie possède le pouvoir de lire le passé des objets et de traverser les miroirs. Fiancée de force à Thorn, elle quitte sa famille pour rejoindre une arche lointaine où intrigues politiques, secrets et mystères mettent sa vie en danger.",
+  "couverture": "images/La Passe-Mimoir.webp",
+  "aLire": false
+},
     {
       "id": 6,
       "titre": "Antigone",
       "auteur": "Jean Anouilh",
       "genre": "Théâtre",
       "description": "Pièce de théâtre inspirée de la mythologie grecque où Antigone lutte pour défendre ses convictions.",
-      "couverture": "images/antigone.jpg",
+      "couverture": "images/Antigone.n.jpg",
       "aLire": false
     },
     {
@@ -60,25 +60,25 @@
       "auteur": "Molière",
       "genre": "Comédie",
       "description": "Comédie de Molière mettant en scène un homme hypocondriaque obsédé par les médecins et sa santé.",
-      "couverture": "images/le-malade-imaginaire.jpg",
+      "couverture": "images/Le Malade imaginaire n.jpg",
       "aLire": true
     },
     {
-      "id": 8,
-      "titre": "Le Bourgeois gentilhomme",
-      "auteur": "Molière",
-      "genre": "Comédie",
-      "description": "Pièce comique racontant les aventures de Monsieur Jourdain qui rêve de devenir un noble.",
-      "couverture": "images/le-bourgeois-gentilhomme.jpg",
-      "aLire": false
-    },
+  "id": 8,
+  "titre": "Eragon",
+  "auteur": "Christopher Paolini",
+  "genre": "Fantasy",
+  "description": "Eragon, un jeune garçon vivant dans un petit village, découvre une mystérieuse pierre bleue qui s’avère être un œuf de dragon. Cette découverte change complètement sa vie et l’entraîne dans une aventure dangereuse remplie de magie, de dragons et de combats contre un roi cruel.",
+  "couverture": "images/Eragon.jpg",
+  "aLire": true
+},
     {
       "id": 9,
       "titre": "L'Avare",
       "auteur": "Molière",
       "genre": "Comédie",
       "description": "Comédie célèbre de Molière centrée sur Harpagon, un homme très avare qui aime plus son argent que sa famille.",
-      "couverture": "images/l-avare.jpg",
+      "couverture": "images/L'Avare n.jpg",
       "aLire": true
     }
   ]
