@@ -2,6 +2,7 @@ const URL_API = "http://localhost:3000/livres";
 
 let allBooks = [];
 let favoris = [];
+let selectedBook = null;
 
 // ================= FETCH BOOKS =================
 async function fetchBooks() {
@@ -33,49 +34,62 @@ function renderBooks(books) {
           <span class="genre">${book.genre}</span>
           <div class="card-buttons">
               <button class="details-btn" data-id="${book.id}">Détails</button>
-              <button class="fav-btn" data-id="${book.id}"> À Lire❤️ </button>
+           
           </div>
       </div>
     `;
   });
 
 }
-// ================= MODAL =================
-function openModal(book) {
-
-  document.getElementById("modal").style.display = "flex";
-  document.getElementById("modal-img").src = book.couverture;
-  document.getElementById("modal-titre").textContent = book.titre;
-  document.getElementById("modal-genre").textContent = "Genre : " + book.genre;
-  document.getElementById("modal-description").textContent = book.description;
-
-}
 // ================= CLICK EVENTS =================
-document.getElementById("book-container").addEventListener("click", function(e){
+document.getElementById("book-container")
+.addEventListener("click", function(e){
 
     // DETAILS
     if(e.target.classList.contains("details-btn")){
-
         const id = e.target.dataset.id;
-
-        const book = allBooks.find(book => book.id == id);
-
-        openModal(book);
+        const book = allBooks.find( book => book.id == id );
+ openModal(book);
 
     }
 
-    // FAVORIS
-    if(e.target.classList.contains("fav-btn")){
+});
+// ================= MODAL =================
+function openModal(book) {
 
-        const id = Number(e.target.dataset.id);
+  selectedBook = book;
 
-        const book = allBooks.find(book => book.id === id);
+  document.getElementById("modal").style.display = "flex";
 
-        favoris.push(book);
+  document.getElementById("modal-img").src = book.couverture;
 
-        renderFavoris();
+  document.getElementById("modal-titre").textContent = book.titre;
 
+  document.getElementById("modal-genre").textContent =
+    "Genre : " + book.genre;
+
+  document.getElementById("modal-description").textContent =
+    book.description;
+}
+
+
+document.getElementById("add-fav")
+.addEventListener("click", () => {
+
+    const exists = favoris.find( f => f.id == selectedBook.id );
+
+    if(exists){
+
+        alert("Livre déjà ajouté ❤️");
+
+        return;
     }
+
+    favoris.push(selectedBook);
+
+    renderFavoris();
+
+    document.getElementById("modal").style.display = "none";
 
 });
 // ================= CLOSE MODAL =================
@@ -111,7 +125,6 @@ function searchBooks() {
   renderBooks(filtered);
 
 }
-
 // ================= FAVORIS =================
 function renderFavoris() {
     const favContainer = document.getElementById("book-grid-fav");
@@ -128,3 +141,15 @@ function renderFavoris() {
         `;
     });
 }
+document.getElementById("book-grid-fav")
+.addEventListener("click", function(e){
+
+    if(e.target.classList.contains("remove-fav")){
+        const id = e.target.dataset.id;
+        favoris = favoris.filter( book => book.id != id);
+        renderFavoris();
+
+    }
+
+});
+

@@ -33,10 +33,10 @@ body {
     margin-right: 40px;
 }
 
-.nav-links li {
+.nav-links li a {
     font-size: 18px;
     font-weight: bold;
-    color: #000;
+    color: black;
     cursor: pointer;
 }
 
@@ -257,21 +257,46 @@ section img{
     cursor: pointer;
 }
 
-/* ================= RESPONSIVE ================= */
-@media(max-width:768px){
 
-    .book-grid{
-        grid-template-columns: repeat(auto-fit,minmax(170px,1fr));
-    }
+/* ================= FAVORITES GRID FIX ================= */
+#book-grid-fav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
 
-    .card img{
-        height: 220px;
-    }
+#book-grid-fav .card {
+    width: 100%;
+    max-width: 250px;
+    background: white;
+    border-radius: 15px;
+}
 
-    .section-title{
-        font-size: 28px;
-    }
+.remove-fav{
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: crimson;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
 
+.remove-fav:hover{
+    background: darkred;
+    transform: scale(1.05);
+}
+
+/* ================= SECTION TITLE ================= */
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 40px;
+    color: #222;
 }
 
 footer {
