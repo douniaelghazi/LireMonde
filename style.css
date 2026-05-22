@@ -96,6 +96,184 @@ section img{
     cursor: pointer;
     transition: 0.3s;
 }
+
+
+/* ================= BOOK GRID ================= */
+.book-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* ================= CARD ================= */
+.card{
+    background: #d8d4c8;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding-bottom: 15px;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+/* ================= IMAGE ================= */
+.card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* ================= TITRE ================= */
+.card h3{
+    font-size: 18px;
+    margin-top: 15px;
+    color: #111;
+    font-weight: 500;
+}
+
+/* ================= AUTEUR ================= */
+.card p{
+    margin-top: 8px;
+    color: #222;
+    font-size: 15px;
+}
+
+/* ================= GENRE ================= */
+.genre{
+    display: block;
+    margin-top: 8px;
+    color: #444;
+    font-size: 15px;
+}
+
+/* ================= BUTTONS ================= */
+.card-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* ================= BTN ================= */
+.card-buttons button{
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.card-buttons button:hover{
+    background: #444;
+}
+
+/* ================= FAVORITES ================= */
+.favorites{
+    margin-top: 50px;
+}
+
+/* ================= SECTION TITLE ================= */
+.section-title{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 40px;
+    color: #222;
+}
+
+/* ================= FILTER BUTTONS ================= */
+.filters-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.filters-container button{
+    padding: 10px 20px;
+    border: none;
+    background: #87826A;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filters-container button:hover{
+    background: #6f6a56;
+    color: white;
+}
+
+
+/* ================= MODAL ================= */
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content{
+    background: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-content h2{
+    margin-top: 15px;
+}
+
+.modal-content p{
+    margin-top: 10px;
+    color: #333;
+}
+
+#close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+
+    .book-grid{
+        grid-template-columns: repeat(auto-fit,minmax(170px,1fr));
+    }
+
+    .card img{
+        height: 220px;
+    }
+
+    .section-title{
+        font-size: 28px;
+    }
+
+}
+
 footer {
     background: #87826A; 
     text-align: center;

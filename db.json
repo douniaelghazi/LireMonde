@@ -40,18 +40,18 @@
   "id": 5,
   "titre": "La Passe-Miroir",
   "auteur": "Christelle Dabos",
-  "genre": "Fantasy",
+  "genre": "Fantaisie",
   "description": "Ophélie possède le pouvoir de lire le passé des objets et de traverser les miroirs. Fiancée de force à Thorn, elle quitte sa famille pour rejoindre une arche lointaine où intrigues politiques, secrets et mystères mettent sa vie en danger.",
-  "couverture": "images/La Passe-Mimoir.webp",
+  "couverture": "images/La Passe-Miroir.webp",
   "aLire": false
 },
     {
       "id": 6,
       "titre": "Antigone",
       "auteur": "Jean Anouilh",
-      "genre": "Théâtre",
+      "genre": "Drame",
       "description": "Pièce de théâtre inspirée de la mythologie grecque où Antigone lutte pour défendre ses convictions.",
-      "couverture": "images/Antigone.n.jpg",
+      "couverture": "images/Antigone n.jpg",
       "aLire": false
     },
     {
@@ -67,9 +67,9 @@
   "id": 8,
   "titre": "Eragon",
   "auteur": "Christopher Paolini",
-  "genre": "Fantasy",
+  "genre": "Fantaisie",
   "description": "Eragon, un jeune garçon vivant dans un petit village, découvre une mystérieuse pierre bleue qui s’avère être un œuf de dragon. Cette découverte change complètement sa vie et l’entraîne dans une aventure dangereuse remplie de magie, de dragons et de combats contre un roi cruel.",
-  "couverture": "images/Eragon.jpg",
+  "couverture": "images/Eragon.webp",
   "aLire": true
 },
     {
