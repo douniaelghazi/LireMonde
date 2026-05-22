@@ -36,12 +36,12 @@
       "couverture": "images/Roméo et juliette.webp",
       "aLire": false
     },
-    {
+   {
   "id": 5,
   "titre": "La Passe-Miroir",
   "auteur": "Christelle Dabos",
   "genre": "Fantaisie",
-  "description": "Ophélie possède le pouvoir de lire le passé des objets et de traverser les miroirs. Fiancée de force à Thorn, elle quitte sa famille pour rejoindre une arche lointaine où intrigues politiques, secrets et mystères mettent sa vie en danger.",
+  "description": "Ophélie lit le passé des objets et traverse les miroirs. Forcée d’épouser Thorn, elle quitte sa famille et découvre un monde dangereux plein de secrets.",
   "couverture": "images/La Passe-Miroir.webp",
   "aLire": false
 },
@@ -63,12 +63,12 @@
       "couverture": "images/Le Malade imaginaire n.jpg",
       "aLire": true
     },
-    {
+   {
   "id": 8,
   "titre": "Eragon",
   "auteur": "Christopher Paolini",
   "genre": "Fantaisie",
-  "description": "Eragon, un jeune garçon vivant dans un petit village, découvre une mystérieuse pierre bleue qui s’avère être un œuf de dragon. Cette découverte change complètement sa vie et l’entraîne dans une aventure dangereuse remplie de magie, de dragons et de combats contre un roi cruel.",
+  "description": "Eragon découvre un œuf de dragon qui change sa vie. Il se retrouve plongé dans une aventure magique et dangereuse contre un roi cruel.",
   "couverture": "images/Eragon.webp",
   "aLire": true
 },
