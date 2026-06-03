@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cinzel", serif;
+}
+body{
+    background-color: #f5f2eb;
+}
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #87826A; 
+    padding: 15px 40px;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.nav-links li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+/* ================= ADMIN PAGE ================= */
+.admin-page{
+    width: 90%;
+    margin: 50px auto;
+}
+/* ================= HEADER ================= */
+.admin-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.admin-header h1{
+    font-size: 36px;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+.admin-header p{
+    color: #555;
+    font-size: 14px;
+}
+
+/* ================= ADD BUTTON ================= */
+
+.add-book-btn{
+    background-color: #8b8670;
+    color: black;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.add-book-btn:hover{
+    background-color: #6f6a55;
+}
+
+/* ================= TABLE ================= */
+
+.table-section{
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: #8b8670;
+    color: white;
+}
+
+th{
+    padding: 18px;
+    text-align: center;
+    font-size: 15px;
+}
+
+td{
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+
+
+
+/* ================= COVER ================= */
+
+.table-cover{
+    width: 70px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.action-btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.edit-btn{
+    background-color: #8b8670;
+    color: white;
+    border: none;
+    padding: 8px 14px;    
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 14px;   
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* ================= MODAL ================= */
+
+.admin-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: flex-start;     
+    overflow-y: auto;           
+    padding: 40px 0;            
+    z-index: 100;
+}
+.admin-modal.show{
+    display: flex;
+}
+
+.admin-modal-content{
+    width: 450px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.admin-modal-content h2{
+    margin-bottom: 20px;
+    color: #2d2d2d;
+}
+
+/* ================= FORM ================= */
+
+#bookForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#bookForm label{
+    margin-bottom: 8px;
+    margin-top: 15px;
+    color: #444;
+    font-size: 14px;
+}
+
+#bookForm input,
+#bookForm select,
+#bookForm textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+#bookForm textarea{
+    resize: none;
+    height: 120px;
+}
+
+/* ================= FORM BUTTONS ================= */
+
+.form-buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.cancel-btn{
+    background-color: #ccc;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.save-btn{
+    background-color: #8b8670;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.save-btn:hover{
+    background-color: #6f6a55;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #87826A; 
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: black;
+    box-sizing: border-box;
+}
+

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'cimzel'sans-serif;
+    font-family: 'cinzel',serif;
 }
 
 body {
@@ -31,6 +31,7 @@ body {
     gap: 30px;
     margin-left: auto;
     margin-right: 40px;
+    
 }
 
 .nav-links li a {
@@ -46,7 +47,7 @@ body {
     border: none;
     width: 250px;
     font-size: 16px;
-    outline: none;
+    
 } 
 section img{
     width:100%;
@@ -111,10 +112,12 @@ section img{
 /* ================= BOOK GRID ================= */
 .book-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
     gap: 25px;
     padding: 30px;
+    justify-content: center;
 }
+
 
 /* ================= CARD ================= */
 .card{
@@ -134,7 +137,7 @@ section img{
 /* ================= IMAGE ================= */
 .card img{
     width: 100%;
-    height: 250px;
+    height: 330px;
     object-fit: cover;
     display: block;
 }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin</title>
+
+    <link rel="stylesheet"href="admin.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+       <header class="navbar">
+    <div class="logo">LireMonde</div>
+    <ul class="nav-links">
+       <li><a href="index.html">Accueil</a></li>
+      <li><a href="#">Admin</a></li>
+    </ul>
+       </header>
+   
+    <section class="admin-page">
+        <div class="admin-header">
+            <div>
+              <h1> GESTION DES LIVRE</h1>
+              <p>GÉREZ TOUS LES LIVRES DE LA PLATEFORME</p>
+            </div>
+            <button id="openAddModal" class="add-book-btn"> + AJOUTER UN LIVRE</button>
+        </div>
+
+        <!-- ================= TABLE ================= -->
+
+        <section class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Couverture</th>
+                        <th>Titre</th>
+                        <th>Auteur</th>
+                        <th>Genre</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </section>
+
+    </section>
+
+    <!-- ================= MODAL ================= -->
+
+    <div id="adminModal" class="admin-modal">
+        <div class="admin-modal-content">
+            <h2 id="modalTitle">Ajouter un livre</h2>
+
+            <form id="bookForm">
+                <input type="hidden"id="bookId">
+
+                <label>Titre</label>
+                <input type="text" id="title"  placeholder="Ex : Dracula..."required>
+
+                <label>Auteur</label>
+                <input type="text" id="author" placeholder="Ex : Bram Stoker..." required>
+
+                <label>Genre</label>
+                <select id="genre">
+                    <option value="">Sélectionner un genre</option>
+                    <option> Fantaisie</option>
+                    <option> Dram </option>
+                    <option> Classique </option>
+                    <option> Science-fiction </option>
+                    <option> Comédie </option>
+                </select>
+
+                <label>Description</label>
+                <textarea id="description" placeholder="Description du livre..." required></textarea>
+
+                <label>Couverture (URL)</label>
+                <input type="text" id="cover"placeholder="https://example.com/cover.jpg" required>
+
+                <div class="form-buttons">
+                    <button type="button"  id="cancelBtn" class="cancel-btn"> Annuler</button>
+                    <button type="submit" class="save-btn">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p> © 2026 LIREMONDE - PLATEFORME DE LECTURE NUMÉRIQUE </p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
+

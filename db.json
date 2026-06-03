@@ -1,16 +1,16 @@
 {
   "livres": [
     {
-      "id": 1,
+      "id": "1",
       "titre": "Les Misérables",
       "auteur": "Victor Hugo",
       "genre": "Classique",
       "description": "Roman classique racontant la vie de Jean Valjean, un ancien prisonnier qui cherche à changer de vie dans une société pleine d’injustices.",
       "couverture": "images/Les Misérables.jpg",
-      "aLire": true
+      "aLire": false
     },
     {
-      "id": 2,
+      "id": "2",
       "titre": "Madame Bovary",
       "auteur": "Gustave Flaubert",
       "genre": "Drame",
@@ -19,7 +19,7 @@
       "aLire": false
     },
     {
-      "id": 3,
+      "id": "3",
       "titre": "Le Rouge et le Noir",
       "auteur": "Stendhal",
       "genre": "Classique",
@@ -28,7 +28,7 @@
       "aLire": true
     },
     {
-      "id": 4,
+      "id": "4",
       "titre": "Roméo et Juliette",
       "auteur": "William Shakespeare",
       "genre": "Drame",
@@ -36,17 +36,17 @@
       "couverture": "images/Roméo et juliette.webp",
       "aLire": false
     },
-   {
-  "id": 5,
-  "titre": "La Passe-Miroir",
-  "auteur": "Christelle Dabos",
-  "genre": "Fantaisie",
-  "description": "Ophélie lit le passé des objets et traverse les miroirs. Forcée d’épouser Thorn, elle quitte sa famille et découvre un monde dangereux plein de secrets.",
-  "couverture": "images/La Passe-Miroir.webp",
-  "aLire": false
-},
     {
-      "id": 6,
+      "id": "5",
+      "titre": "La Passe-Miroir",
+      "auteur": "Christelle Dabos",
+      "genre": "Fantaisie",
+      "description": "Ophélie lit le passé des objets et traverse les miroirs. Forcée d’épouser Thorn, elle quitte sa famille et découvre un monde dangereux plein de secrets.",
+      "couverture": "images/La Passe-Miroir.webp",
+      "aLire": false
+    },
+    {
+      "id": "6",
       "titre": "Antigone",
       "auteur": "Jean Anouilh",
       "genre": "Drame",
@@ -55,7 +55,7 @@
       "aLire": false
     },
     {
-      "id": 7,
+      "id": "7",
       "titre": "Le Malade imaginaire",
       "auteur": "Molière",
       "genre": "Comédie",
@@ -63,17 +63,17 @@
       "couverture": "images/Le Malade imaginaire n.jpg",
       "aLire": true
     },
-   {
-  "id": 8,
-  "titre": "Eragon",
-  "auteur": "Christopher Paolini",
-  "genre": "Fantaisie",
-  "description": "Eragon découvre un œuf de dragon qui change sa vie. Il se retrouve plongé dans une aventure magique et dangereuse contre un roi cruel.",
-  "couverture": "images/Eragon.webp",
-  "aLire": true
-},
     {
-      "id": 9,
+      "id": "8",
+      "titre": "Eragon",
+      "auteur": "Christopher Paolini",
+      "genre": "Fantaisie",
+      "description": "Eragon découvre un œuf de dragon qui change sa vie. Il se retrouve plongé dans une aventure magique et dangereuse contre un roi cruel.",
+      "couverture": "images/Eragon.webp",
+      "aLire": true
+    },
+    {
+      "id": "9",
       "titre": "L'Avare",
       "auteur": "Molière",
       "genre": "Comédie",
@@ -81,5 +81,6 @@
       "couverture": "images/L'Avare n.jpg",
       "aLire": true
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
